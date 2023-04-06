@@ -55,7 +55,10 @@ const Worldcup = () => {
               choice={choice}
               onClickChoice={onClickChoice}
             />
-            <div className="text-2xl mx-8 font-bold">VS</div>
+            <div className="text-2xl mx-8 font-bold flex flex-col items-center justify-center">
+              <div>{`${end === 2 ? "결승" : end + "강"}`}</div>
+              <div>VS</div>
+            </div>
             <AnimalCard
               animal={shuffleAnimal[choice + 1]}
               choice={choice + 1}
